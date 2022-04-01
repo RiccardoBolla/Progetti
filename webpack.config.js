@@ -1,7 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    albums: './src/albums.js',
+    photos: './src/photos.js'
+  },
   mode: 'development',
   module: {
     rules: [
@@ -9,8 +12,8 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: [
-            {loader: "babel-loader"},
-            {loader: "prettier-loader"}
+          { loader: "babel-loader" },
+          { loader: "prettier-loader" }
         ]
       }
     ]
