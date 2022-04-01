@@ -2,7 +2,6 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    albums: './src/albums.js',
     photos: './src/photos.js'
   },
   mode: 'development',
